@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a531f1d3-0460-4a4e-8952-aa2febe1890e" name="Default Changelist" comment="" />
+    <list default="true" id="a531f1d3-0460-4a4e-8952-aa2febe1890e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/SMTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/StudentManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentManage.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1awaa6Vcqsb6LA8xR0SdO71fKSb" />
   <component name="PropertiesComponent">
@@ -33,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SMTest">
+  <component name="RunManager" selected="Application.StudentManage">
     <configuration name="SMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SMTest" />
       <module name="STHomeWork01" />
@@ -50,8 +59,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SMTest" />
         <item itemvalue="Application.StudentManage" />
+        <item itemvalue="Application.SMTest" />
       </list>
     </recent_temporary>
   </component>
@@ -67,10 +76,26 @@
       <updated>1587649170424</updated>
       <workItem from="1587649172990" duration="4789000" />
       <workItem from="1587689773944" duration="5828000" />
+      <workItem from="1588077697845" duration="637000" />
+      <workItem from="1588120113985" duration="237000" />
+      <workItem from="1588150080756" duration="438000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

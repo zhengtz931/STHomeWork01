@@ -71,6 +71,26 @@ public class StudentManage {
         if (!isFindxiugai)
             System.out.println("未查到此人");
     }
+    public static  void xianshi(ArrayList<String> arrayList)
+    {
+        for (String string:arrayList)
+        {
+            if (string.equals("1"))
+                System.out.print("插入" + " ");
+            if (string.equals("2"))
+                System.out.print("查找" + " ");
+            if (string.equals("3"))
+                System.out.print("删除" + " ");
+            if (string.equals("4"))
+                System.out.print("修改" + " ");
+            if (string.equals("5"))
+                System.out.print("输出" + " ");
+            if (string.equals("6"))
+                System.out.print("退出" + " ");
+            if (string.equals("7"))
+                System.out.print("回顾" + " ");
+        }
+    }
 public static void findAll()
 {
     for (Student student1 : arrayList)
@@ -84,6 +104,7 @@ public  static  void tuichu()
     public static void App()
     {
         boolean tuichu = true;
+        ArrayList<String> arrayList = new ArrayList<>();
         while (tuichu)
         {
             System.out.println("请选择操作");
@@ -94,8 +115,10 @@ public  static  void tuichu()
             System.out.println("*     4.修改      *");
             System.out.println("*     5.输出      *");
             System.out.println("*     6.退出      *");
+            System.out.println("*     7.回顾      *");
             System.out.println("******************");
             String a = scanner.nextLine();
+            arrayList.add(a);
             switch (a){
                 case "1":
                     int ID = arrayList.size()+1;
@@ -127,6 +150,9 @@ public  static  void tuichu()
                     break;
                 case "6":
                     tuichu();
+                    break;
+                case "7":
+                    xianshi(arrayList);
                     break;
             }
         }
