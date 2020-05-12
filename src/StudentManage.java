@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class StudentManage {
     static Scanner scanner = new Scanner(System.in);
     static ArrayList<Student> arrayList = new ArrayList<>();
+    //增加学生
     public static void addStudunt(int ID,String name,String birDate,boolean gender)
     {
 
@@ -15,7 +16,7 @@ public class StudentManage {
         arrayList.add(student);
 
     }
-
+    //查找学生
     public static void findStudent(String name1)
     {
 
@@ -32,7 +33,7 @@ public class StudentManage {
         if (!isFind)
             System.out.println("未查到");
     }
-
+    //删除学生
     public static void removeStudent(String name2)
     {
         boolean isFindremove = false;
@@ -49,6 +50,7 @@ public class StudentManage {
         if (!isFindremove)
             System.out.println("未查到此人");
     }
+    //修改学生
     public static void xiugaiStudent(String name3)
     {
 
@@ -71,26 +73,43 @@ public class StudentManage {
         if (!isFindxiugai)
             System.out.println("未查到此人");
     }
+    //显示所有操作
     public static  void xianshi(ArrayList<String> arrayList)
     {
         for (String string:arrayList)
         {
             if (string.equals("1"))
+            {
                 System.out.print("插入" + " ");
+            }
             if (string.equals("2"))
+            {
                 System.out.print("查找" + " ");
+            }
             if (string.equals("3"))
+            {
                 System.out.print("删除" + " ");
+            }
             if (string.equals("4"))
+            {
                 System.out.print("修改" + " ");
+            }
             if (string.equals("5"))
+            {
                 System.out.print("输出" + " ");
+            }
             if (string.equals("6"))
+            {
                 System.out.print("退出" + " ");
+            }
             if (string.equals("7"))
+            {
                 System.out.print("回顾" + " ");
+            }
+
         }
     }
+    //显示所有学生
 public static void findAll()
 {
     for (Student student1 : arrayList)
@@ -120,7 +139,13 @@ public  static  void tuichu()
             String a = scanner.nextLine();
             arrayList.add(a);
             switch (a){
+                //默认人数为10
                 case "1":
+                    if (arrayList.size()>10)
+                    {
+                        System.out.println("人数已满");
+                        break;
+                    }
                     int ID = arrayList.size()+1;
                     System.out.println("请输入姓名：");
                     String name = scanner.nextLine();
@@ -154,6 +179,9 @@ public  static  void tuichu()
                 case "7":
                     xianshi(arrayList);
                     break;
+                    //29参数异常，超出数组长度
+                default:
+                    System.out.println("参数不正常，请重新输入");
             }
         }
     }
